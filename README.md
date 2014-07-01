@@ -1,4 +1,4 @@
-learningToMod
+MCDice
 =============
 
-Learning how to make Minecraft mods!
+Many different dice in Minecraft!
