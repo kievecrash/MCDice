@@ -1,5 +1,6 @@
 package com.kievecrash.mcdice;
 
+import com.kievecrash.mcdice.configuration.ConfigurationHandler;
 import com.kievecrash.mcdice.proxy.IProxy;
 import com.kievecrash.mcdice.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -19,7 +20,7 @@ public class MCDice{
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
