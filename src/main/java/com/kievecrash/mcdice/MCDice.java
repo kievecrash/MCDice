@@ -4,6 +4,7 @@ import com.kievecrash.mcdice.handler.ConfigurationHandler;
 import com.kievecrash.mcdice.proxy.IProxy;
 import com.kievecrash.mcdice.reference.Reference;
 import com.kievecrash.mcdice.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -22,6 +23,7 @@ public class MCDice{
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Pre Initialization Complete");
     }
 
