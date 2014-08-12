@@ -12,7 +12,7 @@ public class ModItems {
 
     public static void init(){
 
-        GameRegistry.registerItem(sixSidedDice, "sixSidedDice");
-        GameRegistry.registerItem(fourSidedDice, "fourSidedDice");
+        GameRegistry.registerItem(sixSidedDice, "itemSixSidedDice");
+        GameRegistry.registerItem(fourSidedDice, "itemFourSidedDice");
     }
 }

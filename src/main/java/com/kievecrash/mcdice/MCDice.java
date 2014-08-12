@@ -1,6 +1,7 @@
 package com.kievecrash.mcdice;
 
 import com.kievecrash.mcdice.handler.ConfigurationHandler;
+import com.kievecrash.mcdice.init.ModBlocks;
 import com.kievecrash.mcdice.init.ModItems;
 import com.kievecrash.mcdice.proxy.IProxy;
 import com.kievecrash.mcdice.reference.Reference;
@@ -28,6 +29,8 @@ public class MCDice{
         LogHelper.info("Pre Initialization Complete");
 
         ModItems.init();
+
+        ModBlocks.init();
     }
 
     @Mod.EventHandler
