@@ -5,6 +5,6 @@ public class BlockSixSidedDice extends BlockMCDice {
 
     public BlockSixSidedDice(){
         super();
-        this.setBlockName("sixSidedDice");
+        this.setBlockName("blockSixSidedDice");
     }
 }

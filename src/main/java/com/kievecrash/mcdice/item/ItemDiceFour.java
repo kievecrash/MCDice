@@ -4,6 +4,6 @@ public class ItemDiceFour extends ItemMCDice {
 
     public ItemDiceFour(){
         super();
-        this.setUnlocalizedName("fourSidedDice");
+        this.setUnlocalizedName("itemFourSidedDice");
     }
 }
