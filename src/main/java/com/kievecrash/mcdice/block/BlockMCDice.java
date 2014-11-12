@@ -1,6 +1,7 @@
 package com.kievecrash.mcdice.block;
 
 
+import com.kievecrash.mcdice.creativetab.CreativeTabMCDice;
 import com.kievecrash.mcdice.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -9,11 +10,12 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
-@GameRegistry.ObjectHolder(Reference.MOD_ID)
+//@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class BlockMCDice extends Block {
 
     public BlockMCDice(Material material){
         super(material);
+        this.setCreativeTab(CreativeTabMCDice.MCDICE_TAB);
     }
 
     public BlockMCDice(){

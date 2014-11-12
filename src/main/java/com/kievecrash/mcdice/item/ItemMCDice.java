@@ -1,19 +1,22 @@
 package com.kievecrash.mcdice.item;
 
+import com.kievecrash.mcdice.creativetab.CreativeTabMCDice;
 import com.kievecrash.mcdice.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-@GameRegistry.ObjectHolder(Reference.MOD_ID)
+//@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ItemMCDice extends Item {
 
 
     public ItemMCDice(){
         super();
+        this.setCreativeTab(CreativeTabMCDice.MCDICE_TAB);
     }
 
     @Override

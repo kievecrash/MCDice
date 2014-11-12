@@ -1,3 +1,4 @@
 item.mcdice:itemSixSidedDice.name=Six Sided Dice
 item.mcdice:itemFourSidedDice.name=Four Sided Dice
 tile.mcdice:blockSixSidedDice.name=Six Sided Dice
+itemGroup.mcdice=MCDice
